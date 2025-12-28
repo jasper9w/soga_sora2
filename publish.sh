@@ -1,0 +1,4 @@
+rm -rf dist build *.egg-info
+uv build
+uv publish \
+-t pypi-AgEIcHlwaS5vcmcCJDU1YzQ3ZDhlLTEyNzgtNDNiZS04MGRhLTRhNWQ3Yjc2YWMxMAACKlszLCJkNmZhOTIxYS1jZTI2LTRiYWYtYTNjZi04OTE5YWEzYmQyN2EiXQAABiAc1dVy34JXlRCLYUhE_TBmaWoBWRR_oG85DMP3qikz_g
