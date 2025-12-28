@@ -240,8 +240,9 @@ def main():
     logger.info(f"共 {len(tasks)} 个任务配置，展开为 {total} 个生成任务")
     logger.info(f"模式: {args.mode}, 并发: {args.workers}, 间隔: {args.interval}s")
     
-    # 创建输出目录
-    output_dir = Path(args.output_dir)
+    # 创建输出目录（添加Excel文件名前缀）
+    excel_name = Path(args.excel_path).stem
+    output_dir = Path(f"{excel_name}_{args.output_dir}")
     output_dir.mkdir(parents=True, exist_ok=True)
     
     # 统计
